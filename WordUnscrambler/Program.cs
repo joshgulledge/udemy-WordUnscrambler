@@ -9,15 +9,15 @@ namespace WordUnscrambler
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter information:");
-            var input = Console.ReadLine();
+            var input = string.Empty;
 
-            while (!input.Equals(string.Empty))
+            do
             {
                 Console.WriteLine("Enter information:");
                 input = Console.ReadLine();
-                Console.WriteLine("User Input is {0}", input);
-            }
+                Console.WriteLine("User input is {0}", input);
+
+            } while (!input.Equals(string.Empty));
 
         }
     }
