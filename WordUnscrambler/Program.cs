@@ -10,10 +10,11 @@ namespace WordUnscrambler
         static void Main(string[] args)
         {
             int[] array = { 1, 5, 7, 9, 10 };
+            List<int> list = new List<int>() { 2, 4, 8, 12 };
 
-            foreach(var element in array)
+            foreach(var element in list)
             {
-                Console.WriteLine("The item is {0}", element);
+                Console.WriteLine("In the array {0}", element);
             }
 
             for (int i=0; i < array.Length; i++)
