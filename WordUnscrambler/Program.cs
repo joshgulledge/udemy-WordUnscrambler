@@ -9,16 +9,24 @@ namespace WordUnscrambler
     {
         static void Main(string[] args)
         {
-            var input = string.Empty;
+            int[] array = { 1, 5, 7, 9, 10 };
 
-            do
+            foreach(var element in array)
             {
-                Console.WriteLine("Enter information:");
-                input = Console.ReadLine();
-                Console.WriteLine("User input is {0}", input);
+                Console.WriteLine("The item is {0}", element);
+            }
 
-            } while (!input.Equals(string.Empty));
+            for (int i=0; i < array.Length; i++)
+            {
+                Console.WriteLine("The item is {0}", array[i]);
+            }
 
+            int index = 0;
+            while (index < array.Length)
+            {
+                Console.WriteLine("The item is {0}", array[index]);
+                index++;
+            }
         }
     }
 }
