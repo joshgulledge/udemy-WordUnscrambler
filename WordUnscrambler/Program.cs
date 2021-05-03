@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic; // this is needed to have lists?
 using System.Linq; // this is needed to have count?
+using System.IO;
 
 
 namespace WordUnscrambler
@@ -9,25 +10,19 @@ namespace WordUnscrambler
     {
         static void Main(string[] args)
         {
-            int[] array = { 1, 5, 7, 9, 10 };
-            List<int> list = new List<int>() { 2, 4, 8, 12 };
+            // writing to a file
+            string[] lines = { "This is the first", "This is the second", "This is the third" };
+            File.WriteAllLines("MyFirstFile.txt", lines);
 
-            foreach(var element in list)
+            //// reading a file
+            //string[] fileContents = File.ReadAllLines("MyFirstFile.txt");
+            //Console.WriteLine(fileContents[1]);
+
+            foreach(string line in File.ReadAllLines("MyFirstFile.txt"))
             {
-                Console.WriteLine("In the array {0}", element);
+                Console.WriteLine(line);
             }
 
-            for (int i=0; i < array.Length; i++)
-            {
-                Console.WriteLine("The item is {0}", array[i]);
-            }
-
-            int index = 0;
-            while (index < array.Length)
-            {
-                Console.WriteLine("The item is {0}", array[index]);
-                index++;
-            }
         }
     }
 }
