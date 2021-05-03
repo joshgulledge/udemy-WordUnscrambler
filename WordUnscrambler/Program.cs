@@ -9,17 +9,10 @@ namespace WordUnscrambler
     {
         static void Main(string[] args)
         {
-            //int[] myArray = new int[5];
-            //myArray[0] = 7;
-            //myArray[1] = 8;
-            //myArray[2] = 4;
-            //myArray[3] = 5;
-            //myArray[4] = 15;
-
-            int[] myArray = { 7, 8, 4, 5, 15 };
-
-            Array.Sort(myArray);
-
+            for(int i =1; i<=5; i++)
+            {
+                Console.WriteLine("This is line {0}", i);
+            }
 
         }
     }
