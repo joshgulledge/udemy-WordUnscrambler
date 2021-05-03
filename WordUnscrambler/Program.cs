@@ -9,17 +9,15 @@ namespace WordUnscrambler
     {
         static void Main(string[] args)
         {
-            List<int> myFirstList = new List<int>();
-            // var myFirstList = new List<int>();   both mean the same
+            int[] myFirstArray = new int[10]; // give it a size
+            myFirstArray[9] = 9;
 
-            Console.WriteLine(myFirstList.Count());
+            var mySecondList = new List<int>();
+            mySecondList.Add(5);
 
-            myFirstList.Add(10);
-            myFirstList.Add(5);
-            myFirstList.Add(9);
-            //myFirstList.Add("hello"); this wont work
+            Console.WriteLine(myFirstArray[7]);
+            Console.WriteLine(mySecondList[0]);
 
-            Console.WriteLine(myFirstList.Count());
         }
     }
 }
