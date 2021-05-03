@@ -9,14 +9,17 @@ namespace WordUnscrambler
     {
         static void Main(string[] args)
         {
-            int[] myFirstArray = new int[10]; // give it a size
-            myFirstArray[9] = 9;
+            //int[] myArray = new int[5];
+            //myArray[0] = 7;
+            //myArray[1] = 8;
+            //myArray[2] = 4;
+            //myArray[3] = 5;
+            //myArray[4] = 15;
 
-            var mySecondList = new List<int>();
-            mySecondList.Add(5);
+            int[] myArray = { 7, 8, 4, 5, 15 };
 
-            Console.WriteLine(myFirstArray[7]);
-            Console.WriteLine(mySecondList[0]);
+            Array.Sort(myArray);
+
 
         }
     }
