@@ -8,12 +8,16 @@ namespace WordUnscrambler.Workers
     {
         public List<MatchedWord> Match(string[] scrambledWords, string[] wordList)
         {
-            var matchedWords = new List<MatchedWord>();
+            List<MatchedWord> matchedWords = new List<MatchedWord>();
 
             foreach(var scrambledWord in scrambledWords)
             {
+                Console.WriteLine("in the scrambled forEach of wordMatcher {0}", scrambledWord);
+
                 foreach(var word in wordList)
                 {
+                    Console.WriteLine("in the list forEach of wordMatcher {0}", word);
+
                     if (scrambledWord.Equals(word, StringComparison.OrdinalIgnoreCase))
                     {
                         matchedWords.Add(BuildMatchedWord(scrambledWord, word));
