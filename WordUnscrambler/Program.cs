@@ -69,8 +69,6 @@ namespace WordUnscrambler
         {
             string[] wordList = _fileReader.Read(Constants.Constants.wordListFileName);
 
-            Console.WriteLine("WordList should have words" + wordList[3]);
-
             List<MatchedWord> matchedWords = _wordMatcher.Match(scrambledWords, wordList);
 
             if(matchedWords.Any())

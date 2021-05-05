@@ -12,11 +12,9 @@ namespace WordUnscrambler.Workers
 
             foreach(var scrambledWord in scrambledWords)
             {
-                Console.WriteLine("in the scrambled forEach of wordMatcher {0}", scrambledWord);
 
                 foreach(var word in wordList)
                 {
-                    Console.WriteLine("in the list forEach of wordMatcher {0}", word);
 
                     if (scrambledWord.Equals(word, StringComparison.OrdinalIgnoreCase))
                     {
@@ -24,8 +22,8 @@ namespace WordUnscrambler.Workers
                     }
                     else
                     {
-                        var scrambledWordArray = scrambledWord.ToCharArray();
-                        var wordArray = word.ToCharArray();
+                        var scrambledWordArray = scrambledWord.ToLower().ToCharArray();
+                        var wordArray = word.ToLower().ToCharArray();
 
                         Array.Sort(scrambledWordArray);
                         Array.Sort(wordArray);
