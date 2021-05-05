@@ -33,7 +33,7 @@ namespace WordUnscrambler
                             WordsManualInput();
                             break;
                         default:
-                            Console.Write(Constants.Constants.EnterScrambledWordsOptionsNotRecognized);
+                            Console.WriteLine(Constants.Constants.EnterScrambledWordsOptionsNotRecognized);
                             break;
                     }
 

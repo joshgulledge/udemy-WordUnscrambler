@@ -7,7 +7,7 @@ namespace WordUnscrambler.Constants
         public const string OptionsOnConinueProgram = "Would you like to continue? Y/N?";
 
         public const string EnterScrambledWordsViaFile = "Enter full path including the file name: ";
-        public const string EnterScrabledWordsManually = "Enter word(s) manyally (seperare by commas if multiple): ";
+        public const string EnterScrabledWordsManually = "Enter word(s) manually (seperare by commas if multiple): ";
         public const string EnterScrambledWordsOptionsNotRecognized = "The optino was not recognized.";
 
         public const string ErrorScrambledWordsCannotBeLoaded = "Scrambled words were not loaded because there was an error";
